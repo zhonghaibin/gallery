@@ -32,7 +32,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
       <Head>
-        <title>Kinpoe.Ray's Gallery</title>
+        <title>MeiLi Gallery</title>
         <meta
           property="og:image"
           content="https://avatars.githubusercontent.com/u/149134281?v=4"
@@ -68,19 +68,19 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               alt="avatar"
             ></Image>
             <h1 className="mt-8 mb-4 text-base font-bold tracking-widest">
-              Kinpoe.Ray's Gallery
+              MeiLi Gallery
             </h1>
             <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-              Focus on Product & AI
+              你笑起来的弧度，是我偷偷收藏的宝藏
             </p>
-            <a
-              className="cursor-pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"
-              href="https://x.com/kinpoe_ray"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Contact me
-            </a>
+            {/*<a*/}
+            {/*  className="cursor-pointer z-10 mt-6 rounded-lg border border-white bg-white px-3 py-2 text-sm font-semibold text-black transition hover:bg-white/10 hover:text-white md:mt-4"*/}
+            {/*  href=""*/}
+            {/*  target="_blank"*/}
+            {/*  rel="noreferrer"*/}
+            {/*>*/}
+            {/*  Contact me*/}
+            {/*</a>*/}
           </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
             <Link
@@ -110,15 +110,6 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         </div>
       </main>
       <footer className="p-6 text-center text-white/80 sm:p-12">
-        Want more info? → {" "}
-        <a
-          href="https://kinpoeray.notion.site/AI-Projects-Dashboard-bbc7e6dc6ed9424db4227f2e58ed9b16"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-           AI Projects Dashboard 
-        </a>
       </footer>    
     </>
   );
